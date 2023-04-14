@@ -11,7 +11,7 @@ h1 {
     padding: 1rem;
 }
 
-ol.pokemon-list{
+.pokemon-list{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -19,9 +19,9 @@ ol.pokemon-list{
     grid-template-columns: 1fr 1fr;
 }
 
-ol.pokemon-list li{
+.pokemon{
     margin: .5rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     color: white;
     border-radius: 1rem;
     display: flex;
@@ -29,8 +29,53 @@ ol.pokemon-list li{
     font-weight: 700;
 }
 
-ol.pokemon-list li img{
-    border-style: none;
-    max-height: 100%;
+.pokemon .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title .number{
+    padding: 0;
+    color:rgba(0, 0, 0, 0.582);
+    opacity: 80%;
+    text-align: right;
+    font-size: .7rem;
+}
+
+.title .name{
+    color: white;
+    margin: .25rem 0rem;
+}
+
+.pokemon .detail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.types li {
+    background-color:rgba(0, 0, 0, 0.342);
+    color: rgba(255, 255, 255, 0.8);
+    padding: .25rem .45rem;
+    border-radius: 1rem;
+    margin: .25rem 0rem;
+    font-size: .62rem;
+}
+
+.pokemon .detail img{
+    max-height: 90px;
+    width: auto;
+    padding-left: .7rem;
     align-self: flex-end;
 }
